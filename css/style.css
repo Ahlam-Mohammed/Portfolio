@@ -1,0 +1,218 @@
+:root{
+    --padding-top: 30px;
+    --padding-bottom: 30px;
+    --main-color: rgb(255, 255, 255);;
+    --secondary-color: rgb(35, 206, 107);
+    --black:#212121;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--black);
+    color: var(--main-color);
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 1.6;
+}
+.container {
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+/* Header */
+header .container nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .container nav ul a{
+    color: var(--main-color);
+}
+h1 span{
+    color: var(--secondary-color);
+    margin-right: 3px;
+    font-size: 37px;
+}
+/* Landing */
+#home .container {
+    align-items: stretch;
+}
+#home .container > div{
+    padding-top: 70px;
+}
+#home .container > div h1{
+    font-size: 44px;
+    margin: 30px 0;
+    color: var(--secondary-color);
+}
+#home .container > div h2{
+    color: var(--secondary-color);
+}
+/* About Me */
+#about-me .container{
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+#about-me .container article{
+    align-items: center;
+}
+#about-me .container article img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+/* Service */
+#services{
+    padding-top: 100px;
+}
+#services .container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    overflow: hidden;
+}
+section header{
+    text-align: center;
+}
+section header h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.container h3{
+    margin-bottom: 20px;
+}
+#services .container article,
+#about-me .container article{
+    padding: 30px 25px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 1.2rem;
+    /* transition: all 0.25s ease 0s; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#services .container article header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.6rem;
+}
+.project-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.project-links a img{
+    width: 1.6rem;
+}
+#services .container article footer{
+    margin-top: 20px;
+}
+#services .container article footer ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 14px;
+    opacity: 0.6;
+}
+svg {
+    fill: none;
+    stroke: var(--secondary-color);
+}
+/* Contant Me */
+#contant{
+    padding-top: 100px;
+}
+#contant header h1{
+    margin-bottom: 0;
+}
+#contant header p{
+    color: var(--secondary-color);
+}
+#contant .container{
+    grid-template-columns: 1fr;
+}
+#contant .container .contact-me{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 70%;
+    margin:3rem auto;
+}
+#contant .container .contact-me div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 40rem;
+    gap: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 1.4rem;
+    padding: 15px;
+}
+#contant .container .contact-me div img{ 
+    width: 3rem;
+}
+#contant .container .contact-me div a{
+    color: var(--black);
+    font-weight: 500;
+}
+#contant .container .form > h2{
+    text-align: center;
+    margin: 40px;
+}
+#contant .container form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+#contant .container form button{
+    border: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 2rem;
+    font-weight: 500;
+    padding: 0.7rem 3rem;
+    text-transform: uppercase;
+}
+input , textarea {
+    width: 50%;
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+    outline: none;
+    background: none;
+    border: 1px solid var(--main-color);
+    color: white;
+    font-weight: 600;
+}
+textarea{
+    height: 13rem;
+    resize: none;
+}
+/* Footer */
+footer{
+    background-color: #2B2B2B;
+}
+footer .container{
+    padding: 1rem 4rem;
+}
+footer .container > div{
+    display: flex;
+}
+footer .container div img{
+    width: 10%;
+}
