@@ -5,99 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ahlam</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/s.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-    <header>
+    <header class="header">
         <div class="container">
-            <h1><span>A</span>hlam</h1>
+            <a href="#"><span>A</span>hlam</a>
+            <div>
+                <label for="switch">Toggle</label>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About me</a></li>
-                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#services">services</a></li>
                     <li><a href="#contant">Contact</a></li>
-                    <li><a href="#">CV</a></li>
+                    <li><a href="#" class="btn">CV</a></li>
                 </ul>
             </nav>
+            <div aria-expanded="false" aria-haspopup="true" aria-label="Abrir menu" class="menu"></div>
         </div>
     </header>
 
     <!-- Home -->
-    <section id="home">
-       <div class="container">
-        <div>
-            <span>Hello &#x1F44B;,I'm</span>
-            <h1>Ahlam Mohammed</h1>
-            <!-- <h2>Full stack developer</h2> -->
-            <p> I'm a Full stack developer with a great passion for programming. I am passionate about delivering solutions that add to people's lives and at the same time challenge me. Improved my skills as a Front-End and Back-End developer
-
-                I develop websites and applications using HTML, CSS, and php. I'm always improving myself with each project I get my hands on.
-                
-                I am a dedicated person who pursues his dreams, hardworking and results oriented, I always seek to achieve my best version.</p>
-            <!-- <a href="#">Contact</a> -->
+    <section class="home padding-top" id="home">
+        <div class="container">
+            <div class="intro">
+                <span>Hello &#x1F44B;,I'm</span>
+                <h1>Ahlam Mohammed</h1>
+                <h2>Full stack developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <a href="#" class="btn">Contact</a>
+            </div>
+            <figure>
+                <img src="images/landing.svg" alt="Ahlam">
+            </figure>
         </div>
-        <figure>
-            <img src="images/landing.svg" alt="Ahlam">
-        </figure>
-       </div>
     </section>
-
     <main>
         <!-- About Me -->
-        <section id="about-me">
-            <header>
-                <h1>Technical Skills</h1>
-            </header>
+        <section class="about" id="about">
             <div class="container">
-                <article>
-                    <img src="images/js-icon.svg" alt="">
-                    <h1>Java Script</h1>
+                <article class="text">
+                    <header>
+                        <h2>About Me</h2>
+                    </header>
+                    <p>My name is Ahlam Mohammed, I'm a Full stack developer with a great passion for programming.
+                        I am passionate about delivering solutions that add to people's lives and at the same time challenge me. Improved my skills as a Front-End and Back-End developer.
+                    </p>
+                    <p></p>
+                    <p>I develop websites and applications using HTML, CSS, and php. I'm always improving myself with each project I get my hands on.</p>
+                    <p>I am a dedicated person who pursues his dreams, hardworking and results oriented, I always seek to achieve my best version.</p>
+                    <!-- <h3>Here are my main skills:</h3>
+                    <div class="skill">
+                        <img src="images/css-icon.svg" alt="">
+                        <img src="images/html-icon.svg" alt="">
+                        <img src="images/js-icon.svg" alt="">
+                    </div> -->
                 </article>
-                <article>
-                    <img src="images/html-icon.svg" alt="">
-                    <h1>Html</h1>
-                </article>
-                <article>
-                    <img src="images/css-icon.svg" alt="">
-                    <h1>Css</h1>
-                </article>
-                <article>
-                    <img src="images/typescript-icon.svg" alt="">
-                    <h1>Type Script</h1>
+                <article class="text">
+                    <header>
+                        <h2>Skills</h2>
+                    </header>
+                    
                 </article>
             </div>
         </section>
 
         <!-- Experience -->
-        <!-- <section id="about-me">
-            <header>
-                <h1>Experience</h1>
-            </header>
+        <section class="about">
             <div class="container">
-                <article>
-                    <img src="images/js-icon.svg" alt="">
-                    <h1>Java Script</h1>
+                <article class="text">
+                    <img src="images/undraw_designer_life_re_6ywf.svg" alt="">
                 </article>
-                <article>
-                    <img src="images/html-icon.svg" alt="">
-                    <h1>Html</h1>
-                </article>
-                <article>
-                    <img src="images/css-icon.svg" alt="">
-                    <h1>Css</h1>
-                </article>
-                <article>
-                    <img src="images/typescript-icon.svg" alt="">
-                    <h1>Type Script</h1>
+                <article class="text">
+                    <header>
+                        <h2>Experience</h2>
+                    </header>
+                    <div class="skill">
+                        <div class="box">
+                            <img src="images/js-icon.svg" alt="">
+                            <div>
+                                <h4>Anything</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex numquam,</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="images/js-icon.svg" alt="">
+                            <div>
+                                <h4>Anything</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex numquam,</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="images/js-icon.svg" alt="">
+                            <div>
+                                <h4>Anything</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex numquam,</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
-        </section> -->
+        </section>
 
-        <!-- My services  -->
-        <section id="services">
+        <!-- My Portfolio  -->
+        <section class="portfolio padding-top" id="portfolio" >
             <header>
                 <h1>My Portfolio</h1>
             </header>
@@ -110,10 +125,8 @@
                             <a href="https://ahlam-mohammed.github.io/Sunnyside/" target="_blank" rel="noreferrer"><img src="images/external-link-icon.svg" alt="Visitar site"></a>
                         </div>
                     </header>
-                    <section>
-                        <h3>Sunnyside Website</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
-                    </section>
+                    <h3>Sunnyside Website</h3>
+                    <p>Lquia maxime aspernatur fugit suscipit itaqu</p>
                     <footer>
                         <ul>
                             <li>Html</li>
@@ -129,10 +142,8 @@
                             <a href="https://ahlam-mohammed.github.io/Easybank/" target="_blank" rel="noreferrer"><img src="images/external-link-icon.svg" alt="Visitar site"></a>
                         </div>
                     </header>
-                    <section>
-                        <h3>Easybank</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
-                    </section>
+                    <h3>Easybank</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
                     <footer>
                         <ul>
                             <li>Html</li>
@@ -148,10 +159,8 @@
                             <a href="https://ahlam-mohammed.github.io/Dreams-website/" target="_blank" rel="noreferrer"><img src="images/external-link-icon.svg" alt="Visitar site"></a>
                         </div>
                     </header>
-                    <section>
-                        <h3>Dreams Website</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
-                    </section>
+                    <h3>Dreams Website</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
                     <footer>
                         <ul>
                             <li>Html</li>
@@ -167,11 +176,8 @@
                             <a href="https://ahlam-mohammed.github.io/Login-Tailwindcss/" target="_blank" rel="noreferrer"><img src="images/external-link-icon.svg" alt="Visitar site"></a>
                         </div>
                     </header>
-                    <section>
-                        <h3>Login</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
-
-                    </section>
+                    <h3>Login</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi debitis quia maxime aspernatur fugit suscipit itaqu</p>
                     <footer>
                         <ul>
                             <li>Html</li>
@@ -183,24 +189,24 @@
         </section>
 
         <!-- Services -->
-        <section id="about-me" style="padding-top: 100px;">
+        <section class="services" id="services">
             <header>
                 <h1>Services</h1>
             </header>
-            <div class="container" style="grid-template-columns: 1fr 1fr;">
-                <article style="background-color: transparent;">
-                    <img src="images/undraw_mobile_testing_re_w7yb.svg" alt="" style="width: 60%;">
+            <div class="container">
+                <article>
+                    <img src="images/web.svg" alt=""">
                     <h1>Web development</h1>
                 </article>
-                <article style="background-color: transparent;">
-                    <img src="images/undraw_designer_life_re_6ywf.svg" alt="" style="width: 60%;">
+                <article>
+                    <img src="images/ui-ux.svg" alt="">
                     <h1>UI/UX design</h1>
                 </article>
             </div>
         </section>
 
         <!-- Contact Me -->
-        <section id="contant">
+        <section class="contant" id="contant">
             <header>
                 <h1>Contact Me</h1>
                 <p>If you've seen my potential or want to talk to me, don't hesitate to send me a message.</p>
@@ -230,15 +236,7 @@
 
     <footer>
         <div class="container">
-            <h1><span>A</span>hlam</h1>
-            <div>
-                <a href="https://www.linkedin.com/in/ahlammo7md/" target="_blank" rel="noreferrer">
-                    <img src="images/linkedin.png" alt="Linkedin">
-                </a>
-                <a href="https://github.com/Ahlam-Mohammed" target="_blank" rel="noreferrer">
-                    <img src="images/github.png" alt="GitHub">
-                </a>
-            </div>
+            <a href="#"><span>A</span>hlam</a>
         </div>
     </footer>
 </body>
