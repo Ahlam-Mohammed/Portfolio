@@ -73,7 +73,7 @@ svg {
     z-index: 1000;
 }
 header .container {
-    grid-template-columns: auto auto auto;
+    grid-template-columns:auto auto;
 }
 header .container > a ,
 footer .container > a{
