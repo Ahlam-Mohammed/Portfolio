@@ -25,7 +25,20 @@
                     <li><a href="#" class="btn" style="background-image: url(images/btn.svg);">CV</a></li>
                 </ul>
             </nav>
-            <div aria-expanded="false" aria-haspopup="true" aria-label="Abrir menu" class="menu"></div>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contant">Contact</a></li>
+                        <li><a href="#" class="btn" style="background-image: url(images/btn-mobile.svg);">CV</a></li>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -42,7 +55,9 @@
             <figure>
                 <img src="images/landing.svg" alt="Ahlam">
             </figure>
-            
+        </div>
+        <div class="background">
+            <img src="images/bg.svg" alt="">
         </div>
     </section>
     <main>
@@ -120,12 +135,19 @@
                                 <div class="icon">
                                     <img src="images/job.svg" alt="">
                                 </div>
-                                <span>2015</span>
-                                <h5>ENGINEERING DEGREE<span>OXFORD UNIVERSITY</span></h5>
-                                <p>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                                adipisicing elit</p>
+                                <span>2020</span>
+                                <h5>Medication Guide and Reports Management<span>Full stack developer</span></h5>
+                                <p>Analysis of all Website operation and Database , Website development by Laravel, Mysql, Bootstrap </p>
                             </li>
                             <li>
+                                <div class="icon">
+                                    <img src="images/job.svg" alt="">
+                                </div>
+                                <span>2019</span>
+                                <h5>Blog<span>Full stack developer</span></h5>
+                                <p>Analysis of all Website operation and Database , Website development by php, Mysql, css </p>
+                            </li>
+                            <!-- <li>
                                 <div class="icon">
                                     <img src="images/job.svg" alt="">
                                 </div>
@@ -133,16 +155,7 @@
                                 <h5>ENGINEERING DEGREE<span>OXFORD UNIVERSITY</span></h5>
                                 <p>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
                                 adipisicing elit</p>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <img src="images/job.svg" alt="">
-                                </div>
-                                <span>2015</span>
-                                <h5>ENGINEERING DEGREE<span>OXFORD UNIVERSITY</span></h5>
-                                <p>  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-                                adipisicing elit</p>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </article>
@@ -283,5 +296,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
