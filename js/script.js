@@ -1,16 +1,20 @@
 var quoteArray = ["I always seek to achieve my best version"];
 var textPosition = 0; 
-// speed in milliseconds
 var speed = 50;
 typewriter = () => {
-  document.getElementById("sub-intro").innerHTML = quoteArray[0].substring(0, textPosition) + '<span>\u25AE</span>';
-  
-  if(textPosition++ != quoteArray[0].length)
+document.getElementById("sub-intro").innerHTML = quoteArray[0].substring(0, textPosition) + '<span>\u25AE</span>';
+
+if(textPosition++ != quoteArray[0].length)
     setTimeout(typewriter, speed);
 }
 
-window.addEventListener("load", typewriter)
+window.addEventListener("load", typewriter);
 
+// 
+imgEffict = () => {
+    document.getElementById("effict").style="transform: rotate(-2deg)";
+}
+window.addEventListener("load", imgEffict);
 // 
 function toggleMobileMenu(menu) 
 {
@@ -21,6 +25,7 @@ function changeTheme()
 {
     var element = document.body;
     element.classList.toggle("light-mode");
+    var img = document.getElementById("img").innerHTML="images/landing-light.svg"
 }
 // 
 function send()
