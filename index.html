@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ahlam</title>
+    <!-- Css File -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -12,9 +13,12 @@
     <header class="header">
         <div class="container">
             <a href="#"><span>A</span>hlam</a>
-            <!-- <div>
-                <label for="switch">Toggle</label>
-            </div> -->
+            <div>
+                <label class="switch">
+                    <input id="switch-btn" onclick="changeTheme()" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -25,6 +29,7 @@
                     <li><a href="#" class="btn" style="background-image: url(images/btn.svg);">CV</a></li>
                 </ul>
             </nav>
+            <!-- Menu for Mobile -->
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -36,20 +41,20 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">services</a></li>
                         <li><a href="#contant">Contact</a></li>
-                        <li><a href="#" class="btn" style="background-image: url(images/btn-mobile.svg);">CV</a></li>
+                        <li><a href="#" class="btn" style="background-image: url(images/btn.svg);">CV</a></li>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Home -->
+    <!-- Landing Section -->
     <section class="home padding-top" id="home">
         <div class="container">
             <div class="intro">
                 <span>Hello &#x1F44B;,I'm</span>
                 <h1>Ahlam Mohammed</h1>
                 <h2>Full stack developer</h2>
-                <p>I always seek to achieve my best version.</p>
+                <p id="sub-intro"></p>
                 <a href="#" class="btn" style="background-image: url(images/btn.svg);">Contact</a>
             </div>
             <figure>
@@ -61,9 +66,10 @@
         </div>
     </section>
     <main>
-        <!-- About Me -->
+        <!-- About Me Section -->
         <section class="about padding-top" id="about">
             <div class="container">
+                <!-- Intro Section -->
                 <article class="text">
                     <header>
                         <h2>About Me</h2>
@@ -85,6 +91,7 @@
                         <img src="images/jira.svg" alt="Jira">
                     </div>
                 </article>
+                <!-- Skills Section -->
                 <article class="text">
                     <header>
                         <h2>Skills</h2>
@@ -119,7 +126,7 @@
             </div>
         </section>
 
-        <!-- Experience -->
+        <!-- Experience Section -->
         <section class="about padding-top">
             <div class="container">
                 <article class="text">
@@ -162,7 +169,7 @@
             </div>
         </section>
 
-        <!-- My Portfolio  -->
+        <!-- My Portfolio Section  -->
         <section class="portfolio padding-top" id="portfolio" >
             <header>
                 <h1>My Portfolio</h1>
@@ -239,7 +246,7 @@
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Services Section -->
         <section class="services" id="services">
             <header>
                 <h1>Services</h1>
@@ -256,7 +263,7 @@
             </div>
         </section>
 
-        <!-- Contact Me -->
+        <!-- Contact Me Section -->
         <section class="contant" id="contant">
             <header>
                 <h1>Contact Me</h1>
@@ -275,11 +282,13 @@
                 </div>
                 <div class="form">
                     <h2>Get in touch using the form below</h2>
-                    <form>
-                        <input placeholder="Email" id="email" type="email" name="email" required="">
+                    <div class="form">
+                        <input placeholder="Email" id="email" type="text" name="email">
+                        <p class="error" id="emailError"></p>
                         <textarea required="" placeholder="your mensagem" id="message" name="message"></textarea>
-                        <button class="btn" type="submit" style="background-image: url(images/btn.svg);">Send</button>
-                    </form>
+                        <p class="error" id="messageError"></p>
+                        <button id="send" class="btn" onclick="send()" style="background-image: url(images/btn.svg);">Send</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -297,6 +306,7 @@
         </div>
     </footer>
 
+    <!-- Scribt File -->
     <script src="js/script.js"></script>
 </body>
 </html>
