@@ -644,6 +644,13 @@ footer .technical-skills a img {
 .light-mode li{
     color: var(--black) !important;
 }
+.light-mode header .container .open nav.mobile-menu {
+    background-color: rgb(241 241 241 / 96%);
+}
+
+.light-mode #hamburger-icon div {
+    background-color: var(--black);
+}
 .light-mode .container > a span {
     color: var(--secondary-color) !important;
 }
@@ -652,8 +659,11 @@ footer .technical-skills a img {
     border: 1px solid var(--black);
     color: var(--black);
 }
-.light-mode .header{
+.light-mode .header {
     background-color: rgb(245 247 249 / 31%);;
+}
+.light-mode header .container .open nav.mobile-menu {
+
 }
 .light-mode .services article,
 .light-mode  .portfolio .container article {
