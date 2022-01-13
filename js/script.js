@@ -25,7 +25,7 @@ function changeTheme()
 {
     var element = document.body;
     element.classList.toggle("light-mode");
-    var img = document.getElementById("img").innerHTML="images/landing-light.svg"
+    // var img = document.getElementById("img").value="images/landing.svg";
 }
 // 
 function send()
