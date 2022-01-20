@@ -11,10 +11,10 @@ if(textPosition++ != quoteArray[0].length)
 window.addEventListener("load", typewriter);
 
 // 
-imgEffict = () => {
-    document.getElementById("effict").style="transform: rotate(-2deg)";
-}
-window.addEventListener("load", imgEffict);
+// imgEffict = () => {
+//     document.getElementById("effict").style="transform: rotate(-2deg)";
+// }
+// window.addEventListener("load", imgEffict);
 // 
 function toggleMobileMenu(menu) 
 {
