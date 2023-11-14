@@ -257,6 +257,7 @@
   }
 
   .home .containerr figure img{
-    margin-top: 3rem;
+    margin-top: 3rem !important;
+    width: 60% !important;
   }
 }
